@@ -5,6 +5,7 @@
 
 Aplikacja pozwala na zapisywanie godzin przebytych w pracy pracowników.
 Na podstawie wprowadzonych informacji można wygenerować zestawienie dla danego pracownika lub działu.
+System zapisuje informacjie w bazie danych o rekordach usuniętych oraz zmodyfikowanych.
 
 ## Użyte technologie
 * Java - 1.8
