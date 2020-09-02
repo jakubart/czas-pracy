@@ -95,8 +95,7 @@ Po utworzenie bazy danych skrypt wystarczy uruchomić na serwerze.
 
 ## Przykładowe zdjęcia
 
-![Example screenshot](./img/1.PNG)
+![Img](./img/1.png)
+![Img](./img/2.png)
+![Img](./img/3.png)
 
-![Example screenshot](./img/2.PNG)
-
-![Example screenshot](./img/3.PNG)
