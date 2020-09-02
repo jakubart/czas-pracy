@@ -92,3 +92,11 @@ END;
 W table godziny_arch znajdują sie informacje jakie dane zostały zmodyfikowane w ewidencji wraz z adnotacją 'update'.
 
 Po utworzenie bazy danych skrypt wystarczy uruchomić na serwerze.
+
+## Przykładowe zdjęcia
+
+![Example screenshot](./img/1.PNG)
+
+![Example screenshot](./img/2.PNG)
+
+![Example screenshot](./img/3.PNG)
