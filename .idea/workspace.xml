@@ -1,41 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c20b4c39-6fb1-4dfe-a8c3-ade190e48384" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/AplikacjaWSPA_BJ.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/cssdialects.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/description.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="5b80b17e-41f9-4cfc-a341-ef3918e7051a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/AplikacjaWSPA_BJ.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/AplikacjaWSPA_BJ1.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AplikacjaWSPA_BJ.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/AplikacjaWSPA_BJ/AplikacjaWSPA_BJ.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/AplikacjaWSPA_BJ/AplikacjaWSPA_BJ.jnlp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AplikacjaWSPA_BJ/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AplikacjaWSPA_BJ/sample/image/Clock-2-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AplikacjaWSPA_BJ/sample/image/Documents-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AplikacjaWSPA_BJ/sample/image/Excel-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AplikacjaWSPA_BJ/sample/image/Explorer-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AplikacjaWSPA_BJ/sample/image/Floppy-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AplikacjaWSPA_BJ/sample/image/Knob-Add-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AplikacjaWSPA_BJ/sample/image/Knob-Cancel-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AplikacjaWSPA_BJ/sample/image/Knob-Loop-On-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AplikacjaWSPA_BJ/sample/image/Uptight-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AplikacjaWSPA_BJ/sample/image/User-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AplikacjaWSPA_BJ/sample/image/Windows-Zealot-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AplikacjaWSPA_BJ/sample/image/calendar-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AplikacjaWSPA_BJ/sample/plikiFXML/fxmTopMenu.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AplikacjaWSPA_BJ/sample/plikiFXML/fxmlDodajPracownika.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AplikacjaWSPA_BJ/sample/plikiFXML/fxmlDodajPracownikaOld.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AplikacjaWSPA_BJ/sample/plikiFXML/fxmlMainControler.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AplikacjaWSPA_BJ/sample/plikiFXML/fxmlPodsumowanieMiesiaca.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AplikacjaWSPA_BJ/sample/plikiFXML/fxmlPokazCzas.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AplikacjaWSPA_BJ/sample/styleCSS/mainCss.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/czas-pracy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/czas-pracy.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,11 +16,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="208">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -60,7 +39,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/.gitignore" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="259" />
     <option name="y" value="188" />
     <option name="width" value="1175" />
@@ -72,7 +58,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -80,20 +65,22 @@
               <item name="czas-pracy" type="b2602c69:ProjectViewProjectNode" />
               <item name="czas-pracy" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="czas-pracy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="czas-pracy" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
-    <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
-    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
-    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="czas-pracy" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1599045913227" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1599048594430" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -134,21 +121,20 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c20b4c39-6fb1-4dfe-a8c3-ade190e48384" name="Default Changelist" comment="" />
-      <created>1599045587178</created>
+      <changelist id="5b80b17e-41f9-4cfc-a341-ef3918e7051a" name="Default Changelist" comment="" />
+      <created>1599048232379</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1599045587178</updated>
-      <workItem from="1599045588558" duration="253000" />
+      <updated>1599048232379</updated>
+      <workItem from="1599048233880" duration="508000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="253000" />
+    <option name="totallyTimeSpent" value="508000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <layout>
       <window_info id="Image Layers" />
       <window_info id="Designer" />
@@ -185,27 +171,24 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/czas-pracy.iml">
+    <entry file="file://$PROJECT_DIR$/AplikacjaWSPA_BJ.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+        <state relative-caret-position="156">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AplikacjaWSPA_BJ.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="247">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
         </state>
       </provider>
     </entry>
