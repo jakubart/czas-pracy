@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.aplikacja.DodajPracownikaController">
+   <children>
+      <SplitPane cache="true" dividerPositions="0.5037243947858473" layoutX="14.0" layoutY="14.0" pickOnBounds="false" prefHeight="574.0" prefWidth="1076.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="573.0" prefWidth="537.0">
+               <children>
+                  <GridPane layoutX="23.0" layoutY="13.0" prefHeight="473.0" prefWidth="484.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="87.19999923706055" minHeight="10.0" prefHeight="62.39999618530273" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="73.59999084472656" minHeight="10.0" prefHeight="59.8" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="104.0000244140625" minHeight="10.0" prefHeight="77.40000000000002" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="83.19998779296873" minHeight="10.0" prefHeight="46.59998779296876" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="98.60002746582029" minHeight="10.0" prefHeight="77.00001220703126" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="71.39999999999998" minHeight="10.0" prefHeight="28.200018310546852" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="47.199981689453125" minHeight="0.0" prefHeight="47.199981689453125" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="99.59999999999997" minHeight="10.0" prefHeight="72.80003662109374" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="28.600012207031227" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label text="DODAJ NOWEGO PRACOWNIKA" />
+                        <Label text="PRACOWNIK (NAZWISKO I IMIE):" GridPane.rowIndex="1" />
+                        <TextField fx:id="textFieldPracownik" GridPane.rowIndex="2" />
+                        <Label text="DZIAŁ:" GridPane.rowIndex="3" />
+                        <ComboBox fx:id="comboBoxDzialDp" onMouseClicked="#pokazDzial" prefHeight="26.0" prefWidth="514.0" promptText="Wybierz dział" GridPane.rowIndex="4" />
+                        <CheckBox fx:id="checkBoxDzial" mnemonicParsing="false" onAction="#dodajNowyDzial" text="NOWY DZIAŁ" GridPane.rowIndex="5" />
+                        <TextField fx:id="textFieldDzial" visible="false" GridPane.rowIndex="6" />
+                        <Button fx:id="buttonDodaj" alignment="TOP_LEFT" graphicTextGap="20.0" mnemonicParsing="false" onAction="#dodajPracwnika" prefHeight="48.0" prefWidth="226.0" text="DODAJ" GridPane.rowIndex="7">
+                           <graphic>
+                              <ImageView fitHeight="63.0" fitWidth="78.0" focusTraversable="true" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/Documents-icon.png" />
+                                 </image>
+                                 <cursor>
+                                    <Cursor fx:constant="DEFAULT" />
+                                 </cursor>
+                              </ImageView>
+                           </graphic>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Button>
+                     </children>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" mouseTransparent="true" prefHeight="160.0" prefWidth="100.0" SplitPane.resizableWithParent="false" />
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<Pane nodeOrientation="LEFT_TO_RIGHT" prefHeight="600.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.aplikacja.DodajPracownikaController">
+   <children>
+      <GridPane alignment="TOP_RIGHT" layoutX="100.0" layoutY="29.0" prefHeight="362.0" prefWidth="479.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="58.599996948242186" minHeight="10.0" prefHeight="37.59999389648437" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="78.40000610351561" minHeight="10.0" prefHeight="47.399996948242176" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="57.00000610351563" minHeight="10.0" prefHeight="31.600018310546886" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="53.99999084472657" minHeight="10.0" prefHeight="47.59998168945313" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="71.79999389648435" minHeight="10.0" prefHeight="40.399993896484375" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="65.19999389648439" minHeight="10.0" prefHeight="60.400006103515636" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="83.39999999999998" minHeight="10.0" prefHeight="80.19998779296873" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="28.0" prefWidth="399.0" text="DODAJ NOWEGO PRACOWNIKA">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label text="PRACOWNIK (NAZWISKO I IMIE):" GridPane.rowIndex="1" />
+            <TextField fx:id="textFieldPracownik" GridPane.rowIndex="2" />
+            <Label text="DZIAŁ:" GridPane.rowIndex="3" />
+            <ComboBox fx:id="comboBoxDzialDp" onMouseClicked="#pokazDzial" prefHeight="26.0" prefWidth="514.0" promptText="Wybierz dział" GridPane.rowIndex="4" />
+            <CheckBox fx:id="checkBoxDzial" mnemonicParsing="false" onAction="#dodajNowyDzial" text="NOWY DZIAŁ" GridPane.rowIndex="5" />
+            <TextField fx:id="textFieldDzial" disable="true" GridPane.rowIndex="6" />
+            <Button fx:id="buttonDodaj" alignment="TOP_LEFT" graphicTextGap="20.0" mnemonicParsing="false" onAction="#dodajPracwnika" prefHeight="48.0" prefWidth="226.0" text="DODAJ" GridPane.rowIndex="7">
+               <graphic>
+                  <ImageView fitHeight="56.0" fitWidth="52.0" focusTraversable="true" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/Uptight-icon.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </ImageView>
+               </graphic>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <GridPane.margin>
+                  <Insets left="100.0" />
+               </GridPane.margin>
+            </Button>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </GridPane>
+      <GridPane layoutX="716.0" layoutY="10.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="582.0" prefWidth="563.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="119.5999969482422" minHeight="10.0" prefHeight="41.99999084472657" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="157.60000915527345" minHeight="10.0" prefHeight="31.999990844726568" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="205.60000610351562" minHeight="10.0" prefHeight="37.600012207031256" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="265.59999999999997" minHeight="10.0" prefHeight="73.79999389648438" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="298.6000122070312" minHeight="10.0" prefHeight="210.8000366210937" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="138.0" minHeight="10.0" prefHeight="44.00002441406252" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="148.79998779296875" minHeight="10.0" prefHeight="76.3999633789063" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="181.00002441406252" minHeight="10.0" prefHeight="80.4000366210937" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label prefHeight="28.0" prefWidth="399.0" text="SZUKAJ PRACOWNIKA W BAZIE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label text="PRACOWNIK (NAZWA DO WYSZUKANIA):" GridPane.rowIndex="1" />
+            <TextField fx:id="textFieldSzukajPracownika" prefHeight="34.0" prefWidth="563.0" promptText="Wpisz tekst" GridPane.rowIndex="2" />
+            <Button fx:id="butonSzukajPrcownika" alignment="TOP_LEFT" graphicTextGap="20.0" mnemonicParsing="false" onAction="#szukajPracownika" prefHeight="46.0" prefWidth="162.0" text="SZUKAJ" GridPane.rowIndex="3">
+               <graphic>
+                  <ImageView fitHeight="42.0" fitWidth="56.0" focusTraversable="true" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/Explorer-icon.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </ImageView>
+               </graphic>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <GridPane.margin>
+                  <Insets left="200.0" />
+               </GridPane.margin>
+            </Button>
+            <TableView fx:id="tableVievSzukajPrac" onMouseClicked="#pobierzZTabeli" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="4">
+              <columns>
+                  <TableColumn prefWidth="54.4000244140625" text="ID">
+                      <cellValueFactory>
+                          <PropertyValueFactory property="id" />
+                      </cellValueFactory>
+                  </TableColumn>
+                <TableColumn prefWidth="315.20001220703125" text="PRACOWNIK">
+                   <cellValueFactory>
+                      <PropertyValueFactory property="pracownik" />
+                   </cellValueFactory>
+                </TableColumn>
+                <TableColumn minWidth="0.0" prefWidth="194.39996337890625" text="DZIAŁ">
+                   <cellValueFactory>
+                      <PropertyValueFactory property="dzial" />
+                   </cellValueFactory>
+                </TableColumn>
+              </columns>
+            </TableView>
+            <CheckBox fx:id="checkBoxEdytujPrac" mnemonicParsing="false" onMouseClicked="#edytujPracownika" prefHeight="18.0" prefWidth="259.0" text="EDYTUJ PRACOWNIKA" GridPane.rowIndex="5" />
+            <TextField fx:id="textFieldEdytujPrac" disable="true" maxWidth="-Infinity" prefHeight="26.0" prefWidth="274.0" promptText="Pracownik" GridPane.rowIndex="6" GridPane.valignment="CENTER">
+               <GridPane.margin>
+                  <Insets left="100.0" />
+               </GridPane.margin></TextField>
+            <TextField fx:id="textFieldEdytujDzial" disable="true" maxWidth="-Infinity" prefHeight="26.0" prefWidth="161.0" promptText="Dział" GridPane.rowIndex="6">
+               <GridPane.margin>
+                  <Insets left="400.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="textFieldId" disable="true" editable="false" maxWidth="-Infinity" prefHeight="26.0" prefWidth="60.0" promptText="ID" GridPane.rowIndex="6" />
+            <Button fx:id="butonEdytujPrac" disable="true" mnemonicParsing="false" onAction="#edytujPracownikaWBazie" prefHeight="46.0" prefWidth="162.0" text="EDYTUJ" GridPane.rowIndex="7">
+               <GridPane.margin>
+                  <Insets left="200.0" />
+               </GridPane.margin>
+               <graphic>
+                  <ImageView fitHeight="37.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/Knob-Loop-On-icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </GridPane>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</Pane>

@@ -1,0 +1,43 @@
+.tlo {
+    -fx-background-color: rgb(255, 250, 197);
+}
+
+.text-area .text {
+    -fx-text-alignment: center;
+    -fx-font-size: 30px;
+}
+
+.text-area .content {
+    -fx-background-color: rgb(255, 255, 247);
+}
+
+.button:hover {
+    -fx-background-color: burlywood;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(one-pass-box, rgba(105, 78, 52, 0.68), 1, 1, 10, 10);
+}
+
+.button {
+    -fx-font-family: "Times New Roman"
+}
+
+.label{
+    -fx-font-family: "Times New Roman";
+}
+
+#checkBoxEdytuj {
+    -fx-font-size: 20px;
+}
+
+#labelZaloguj {
+    -fx-font-size: 25px;
+    -fx-font-family: "Times New Roman";
+    -fx-font-weight: bold;
+}
+
+#labelLogin {
+    -fx-font-size: 17px;
+}
+#labelHaslo {
+    -fx-font-size: 17px;
+}

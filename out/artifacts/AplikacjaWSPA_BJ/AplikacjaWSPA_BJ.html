@@ -1,0 +1,43 @@
+<html><head>
+  <SCRIPT src="http://java.com/js/dtjava.js"></SCRIPT>
+<script>
+    function launchApplication(jnlpfile) {
+        dtjava.launch(            {
+                url : 'AplikacjaWSPA_BJ.jnlp'
+            },
+            {
+                javafx : '8.0+'
+            },
+            {}
+        );
+        return false;
+    }
+</script>
+
+<script>
+    function javafxEmbedAplikacjaWSPA_BJ_id() {
+        dtjava.embed(
+            {
+                id : 'AplikacjaWSPA_BJ_id',
+                url : 'AplikacjaWSPA_BJ.jnlp',
+                placeholder : 'javafx-app-placeholder',
+                width : '1300',
+                height : '800'
+            },
+            {
+                javafx : '8.0+'
+            },
+            {}
+        );
+    }
+    <!-- Embed FX application into web page once page is loaded -->
+    dtjava.addOnloadCallback(javafxEmbedAplikacjaWSPA_BJ_id);
+</script>
+
+</head><body>
+<h2>Test page for <b>AplikacjaWSPA_BJ</b></h2>
+  <b>Webstart:</b> <a href='AplikacjaWSPA_BJ.jnlp' onclick="return launchApplication('AplikacjaWSPA_BJ.jnlp');">click to launch this app as webstart</a><br><hr><br>
+
+  <!-- Applet will be inserted here -->
+  <div id='javafx-app-placeholder'></div>
+</body></html>

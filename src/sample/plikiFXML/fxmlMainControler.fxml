@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1400.0" styleClass="tlo" stylesheets="@../styleCSS/mainCss.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.aplikacja.MainController">
+   <top>
+      <VBox prefHeight="26.0" prefWidth="1200.0" BorderPane.alignment="CENTER">
+         <fx:include fx:id="topMenu" source="fxmTopMenu.fxml" />
+      </VBox>
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="1400.0" styleClass="label" stylesheets="@../styleCSS/mainCss.css" BorderPane.alignment="CENTER">
+         <children>
+            <Pane layoutX="463.0" layoutY="159.0" prefHeight="77.0" prefWidth="475.0">
+               <children>
+                  <Label layoutX="49.0" layoutY="16.0" text="Ewidencja Czasu Pracy">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </center>
+   <bottom>
+      <Label text="Czas Pracy v. 1.0 by Bartłomiej Jakubowski" textAlignment="RIGHT" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets left="850.0" />
+         </BorderPane.margin>
+         <font>
+            <Font name="Rockwell" size="13.0" />
+         </font>
+      </Label>
+   </bottom>
+</BorderPane>

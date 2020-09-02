@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.aplikacja.PokazCzasControl">
+<children>
+    <TableView fx:id="tableVievTabela" layoutX="312.0" layoutY="14.0" onMouseClicked="#pobierzZTabeli" prefHeight="547.0" prefWidth="987.0" snapToPixel="false">
+        <columns>
+            <TableColumn prefWidth="230.39996337890625" text="PRACOWNIK">
+                <cellValueFactory>
+                    <PropertyValueFactory property="pracownik" /> </cellValueFactory>
+            </TableColumn>
+            <TableColumn minWidth="-Infinity" prefWidth="123.2000732421875" text="DATA WEJŚCIA">
+                <cellValueFactory>
+                    <PropertyValueFactory property="data_wejscie" /> </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="152.00006103515625" text="GODZINA WEJŚCIA">
+                <cellValueFactory>
+                    <PropertyValueFactory property="wejscie" /> </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="160.0" text="GODZINA WYJŚCIA">
+                <cellValueFactory>
+                    <PropertyValueFactory property="wyjscie" /> </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="81.60003662109375" text="SUMA">
+                <cellValueFactory>
+                    <PropertyValueFactory property="suma" /> </cellValueFactory>
+            </TableColumn>
+            <TableColumn minWidth="0.0" prefWidth="98.39984130859375" text="STAWKA">
+               <cellValueFactory>
+                  <PropertyValueFactory property="stawka" />
+               </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="146.4000244140625" text="NIEOBECNOŚĆ">
+                <cellValueFactory>
+                    <PropertyValueFactory property="nieobecnosc" /></cellValueFactory>
+            </TableColumn>
+        </columns>
+    </TableView>
+    <VBox focusTraversable="true" layoutX="14.0" layoutY="37.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="547.0" prefWidth="309.0" spacing="5.0">
+        <children>
+            <Label fx:id="labelSumaPole" prefHeight="81.0" prefWidth="270.0" text="SumaPole" visible="false" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Label>
+            <Label text="DZIAŁ" />
+            <ComboBox fx:id="comboBoxDzial" prefHeight="26.0" prefWidth="372.0" visibleRowCount="25" />
+            <Label text="PRACOWNIK" />
+            <ComboBox fx:id="comboBoxPracownik" onMouseClicked="#pokazPracownika" prefHeight="26.0" prefWidth="364.0" visibleRowCount="20" />
+            <Label text="OD" />
+            <DatePicker fx:id="dataPoczatek" prefHeight="26.0" prefWidth="307.0" />
+            <Label text="DO" />
+            <DatePicker fx:id="dataKoniec" prefHeight="26.0" prefWidth="312.0" />
+            <Button fx:id="buttonPokazTabele" alignment="TOP_LEFT" graphicTextGap="20.0" mnemonicParsing="false" onAction="#pokazTabele" prefHeight="43.0" prefWidth="270.0" text="POKAŻ">
+                <VBox.margin>
+                    <Insets top="20.0" />
+                </VBox.margin>
+               <graphic>
+                  <ImageView fitHeight="68.0" fitWidth="116.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/Explorer-icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#pobierzExcel" prefHeight="34.0" prefWidth="270.0" text="ZAPISZ DO EXCEL">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+               <graphic>
+                  <ImageView fitHeight="39.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/Excel-icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <CheckBox fx:id="checkBoxEdytuj" mnemonicParsing="false" onAction="#checkEdytujDane" text="EDYTUJ DANE">
+                <VBox.margin>
+                    <Insets left="50.0" top="10.0" />
+                </VBox.margin>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+        </children>
+        <opaqueInsets>
+            <Insets />
+        </opaqueInsets>
+        <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="10.0" />
+        </padding>
+    </VBox>
+    <VBox layoutX="29.0" layoutY="584.0" prefHeight="102.0" prefWidth="1243.0">
+        <children>
+            <HBox fx:id="hBoxEdytuj" prefHeight="42.0" prefWidth="1046.0" spacing="10.0" visible="false">
+                <children>
+                    <Label prefHeight="18.0" prefWidth="60.0" text="DZIEŃ" wrapText="true" />
+                    <DatePicker fx:id="dataPickerEdytujGodiny" prefHeight="26.0" prefWidth="130.0" />
+                    <Label prefHeight="18.0" prefWidth="70.0" text="WEJŚCIE:" />
+                    <TextField fx:id="textFieldCzasWejscie" prefHeight="26.0" prefWidth="130.0" promptText="GG:mm" />
+                    <Label prefHeight="18.0" prefWidth="69.0" text="WYJŚCIE" />
+                    <TextField fx:id="textFieldCzasWyjscie" prefHeight="26.0" prefWidth="130.0" promptText="GG:mm" />
+                  <Label prefHeight="18.0" prefWidth="97.0" text="STAWKA" />
+                  <ComboBox fx:id="comboBoxStawka" cache="true" prefHeight="26.0" prefWidth="164.0" promptText="Wybierz stawke" />
+                </children>
+                <padding>
+                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                </padding>
+            </HBox>
+            <HBox fx:id="hboxNieobecnosc" prefHeight="53.0" prefWidth="1233.0" visible="false">
+               <children>
+                  <CheckBox fx:id="checkBoxNieobecnosc" mnemonicParsing="false" onAction="#checkNieobecnosc" text="NIEOBECNOŚĆ">
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin></CheckBox>
+                  <ComboBox fx:id="comboBoxNieobecnosc" disable="true" prefHeight="26.0" prefWidth="370.0" promptText="Rodzaj nieobecności">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets left="40.0" top="5.0" />
+                     </HBox.margin>
+                  </ComboBox>
+                    <Button fx:id="buttonDodajDzien" alignment="TOP_CENTER" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#dodajDzienObj" prefHeight="34.0" prefWidth="160.0" text="DODAJ">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/Knob-Add-icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <HBox.margin>
+                        <Insets left="100.0" right="10.0" top="5.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets top="7.0" />
+                     </padding></Button>
+                    <Button fx:id="buttonWstaw" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#edytujGodzinyObj" prefHeight="34.0" prefWidth="160.0" text="EDYTUJ">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/Knob-Loop-On-icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" top="5.0" />
+                     </HBox.margin></Button>
+                    <Button fx:id="buttonUsun" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#usunDzien" prefHeight="34.0" prefWidth="160.0" text="USUŃ">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/Knob-Cancel-icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <HBox.margin>
+                        <Insets left="10.0" right="20.0" top="5.0" />
+                     </HBox.margin></Button>
+               </children>
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+            </HBox>
+        </children>
+    </VBox>
+</children>
+</Pane>
